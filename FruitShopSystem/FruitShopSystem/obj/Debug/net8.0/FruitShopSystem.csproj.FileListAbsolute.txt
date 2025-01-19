@@ -1,0 +1,15 @@
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\bin\Debug\net8.0\FruitShopSystem.exe
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\bin\Debug\net8.0\FruitShopSystem.deps.json
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\bin\Debug\net8.0\FruitShopSystem.runtimeconfig.json
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\bin\Debug\net8.0\FruitShopSystem.dll
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\bin\Debug\net8.0\FruitShopSystem.pdb
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.AssemblyInfoInputs.cache
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.AssemblyInfo.cs
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.csproj.CoreCompileInputs.cache
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.sourcelink.json
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.dll
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\refint\FruitShopSystem.dll
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.pdb
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\FruitShopSystem.genruntimeconfig.cache
+C:\0LamViec\ELCA_6months\Test\EvereduTest-1\FruitShopSystem\FruitShopSystem\obj\Debug\net8.0\ref\FruitShopSystem.dll
