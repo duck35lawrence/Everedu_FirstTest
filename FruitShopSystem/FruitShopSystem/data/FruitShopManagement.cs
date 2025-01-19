@@ -75,7 +75,6 @@ namespace FruitShopSystem.data
 
         public void Shopping()
         {
-            Console.Clear ();
             Console.WriteLine("Shopping");
             //nếu list empty
             if (fruits.Count == 0) 
