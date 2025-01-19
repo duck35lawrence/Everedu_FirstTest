@@ -46,6 +46,7 @@ namespace FruitShopSystem.util
                 }
             }
         }
+
         public static int GetAnInteger(string inpMsg, string errMsg, int lowerBound, int upperBound)
         {
             Console.WriteLine(inpMsg);

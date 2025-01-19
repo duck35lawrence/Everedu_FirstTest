@@ -11,13 +11,12 @@ class Program
         menu.AddNewOption("Shopping(for buyer)");
         menu.AddNewOption("Exit");
 
-        FruitShop fsSystem = new FruitShop();
+        FruitShopManagement fsSystem = new FruitShopManagement();
         int choice = 0;
         do
         {
             menu.ShowMenu();
             choice = menu.GetChoice();
-            Console.Clear();
             switch (choice)
             {
                 case 1:
