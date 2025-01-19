@@ -95,14 +95,16 @@ namespace FruitShopSystem.data
                         item.Id, item.Name, item.Origin, price));
                 }
                 string fruitId = Inputter.GetString("Input fruit Id: ", "Id can not be empty");
-                Fruit fruit = ManagementUtils.GetFruitById(fruits, fruitId);
+
+                Fruit fruitToOrder = ManagementUtils.GetFruitById(fruits, fruitId);
                 int quantityBuy = 0;
-                if (fruit == null) Console.WriteLine("Fruit not found");
+                if (fruitToOrder == null) Console.WriteLine("Fruit not found");
                 else
                 {
-                    Console.WriteLine("You selected: " + fruit.Name);
+                    Console.WriteLine("You selected: " + fruitToOrder.Name);
                     quantityBuy = Inputter.GetAnInteger("Input quantity: ", "Quantity can not be empty.", 1);
-                    customer.Fruits.Add(new Fruit(fruit.Id, fruit.Name, fruit.Price, quantityBuy, fruit.Origin));
+                    Fruit newFruit = new Fruit(fruitToOrder.Id, fruitToOrder.Name, fruitToOrder.Price, quantityBuy, fruitToOrder.Origin);
+                    ManagementUtils.AddFruitIntoOrder(customer, newFruit);
                 }
 
                 //ask for continue
@@ -110,45 +112,34 @@ namespace FruitShopSystem.data
                     "Y", "N");
                 if (!isContinue)
                 {
-                    ManagementUtils.ShowFruitsOfCustomer(customer);
-                    //Nhập name cho customer
-                    string name = Inputter.GetString("Input your name: ", "Name can not be empty.");
-                    Customer existedCustomer = ManagementUtils.GetCustomerByName(customers, name);
-                    if (existedCustomer == null)
+                    if(customer.Fruits.Count > 0)
                     {
-                        customer.Name = name;
-                        customers.Add(customer);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Customer is existed.");
-                        bool isReplace = Inputter.GetBoolean(
-                            "You want to replace (R) or add (A) the new order. (R/A)?: ",
-                            "R or A only.",
-                            "R", "A");
-                        if (isReplace)
+                        ManagementUtils.ShowFruitsOfCustomer(customer);
+                        //Nhập name cho customer
+                        string name = Inputter.GetString("Input your name: ", "Name can not be empty.");
+                        Customer existedCustomer = ManagementUtils.GetCustomerByName(customers, name);
+                        if (existedCustomer == null)
                         {
-                            existedCustomer.Fruits = customer.Fruits;
+                            customer.Name = name;
+                            customers.Add(customer);
                         }
                         else
                         {
-                            //duyệt từng fruit của order mới
-                            foreach (var item in customer.Fruits)
+                            Console.WriteLine("Customer is existed.");
+                            bool isReplace = Inputter.GetBoolean(
+                                "You want to replace (R) or add (A) the new order. (R/A)?: ",
+                                "R or A only.",
+                                "R", "A");
+                            if (isReplace)
                             {
-                                bool isExistedItem = false;
-                                //duyệt từng fruit của order cũ
-                                foreach (var existedItem in existedCustomer.Fruits)
+                                existedCustomer.Fruits = customer.Fruits;
+                            }
+                            else
+                            {
+                                //duyệt từng fruit của order mới
+                                foreach (var fruit in customer.Fruits)
                                 {
-                                    //nếu trùng id thì cộng dồn quantity
-                                    if (item.Id == existedItem.Id)
-                                    {
-                                        existedItem.Quantity += item.Quantity;
-                                        isExistedItem = true;
-                                    }
-                                }
-                                if (!isExistedItem)
-                                {
-                                    existedCustomer.Fruits.Add(item);
+                                    ManagementUtils.AddFruitIntoOrder(existedCustomer, fruit);
                                 }
                             }
                         }

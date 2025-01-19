@@ -31,6 +31,24 @@ namespace FruitShopSystem.util
             return GetItemByProperty(customers, customer => customer.Name, name);
         }
 
+        public static void AddFruitIntoOrder(Customer customer, Fruit fruit)
+        {
+            bool isExistedItem = false;
+            foreach (var existedFruit in customer.Fruits)
+            {
+                if (fruit.Id == existedFruit.Id)
+                {
+                    existedFruit.Quantity += fruit.Quantity;
+                    isExistedItem = true;
+                    break;
+                }
+            }
+            if (!isExistedItem)
+            {
+                customer.Fruits.Add(fruit);
+            }
+        }
+
         public static void ShowFruitsOfCustomer(Customer customer)
         {
             Console.WriteLine("Product | Quantity | Price | Amount");
