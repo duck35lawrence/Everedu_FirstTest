@@ -12,6 +12,14 @@ namespace FruitShopSystem.data
         private List<Customer> customers = new List<Customer>();
         private List<Fruit> fruits = new List<Fruit>();
 
+        public void InitFruits()
+        {
+            fruits.Add(new Fruit("1", "Mango", 3, "Vietnam"));
+            fruits.Add(new Fruit("2", "Banana", 2, "Thailand"));
+            fruits.Add(new Fruit("3", "Hehe", 10, "UK"));
+            fruits.Add(new Fruit("4", "Apple", 4, "US"));
+        }
+
         public void CreateFruit()
         {
             while (true)
@@ -50,7 +58,6 @@ namespace FruitShopSystem.data
 
         public void ViewOrdersList()
         {
-            Console.Clear ();
             Console.WriteLine("View Orders List");
             //Nếu list empty
             if(customers.Count == 0)
@@ -85,7 +92,7 @@ namespace FruitShopSystem.data
                 foreach (var item in fruits)
                 {
                     string price = item.Price.ToString() + "$";
-                    Console.WriteLine(string.Format("|{0,7}     |  {1,-15} |  {2,-11} |    {3,-8} |",
+                    Console.WriteLine(string.Format("| {0,-10} | {1,-16} | {2,-12} | {3,-11} |",
                         item.Id, item.Name, item.Origin, price));
                 }
                 string fruitId = Inputter.GetString("Input fruit Id: ", "Id can not be empty");
@@ -129,14 +136,20 @@ namespace FruitShopSystem.data
                             //duyệt từng fruit của order mới
                             foreach (var item in customer.Fruits)
                             {
+                                bool isExistedItem = false;
                                 //duyệt từng fruit của order cũ
                                 foreach (var existedItem in existedCustomer.Fruits)
                                 {
                                     //nếu trùng id thì cộng dồn quantity
                                     if (item.Id == existedItem.Id)
+                                    {
                                         existedItem.Quantity += item.Quantity;
-                                    else
-                                        existedCustomer.Fruits.Add(item);
+                                        isExistedItem = true;
+                                    }
+                                }
+                                if (!isExistedItem)
+                                {
+                                    existedCustomer.Fruits.Add(item);
                                 }
                             }
                         }

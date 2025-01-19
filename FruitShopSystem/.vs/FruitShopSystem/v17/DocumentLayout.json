@@ -52,9 +52,9 @@
               "RelativeDocumentMoniker": "FruitShopSystem\\util\\ManagementUtils.cs",
               "ToolTip": "C:\\0LamViec\\ELCA_6months\\Test\\EvereduTest-1\\FruitShopSystem\\FruitShopSystem\\util\\ManagementUtils.cs",
               "RelativeToolTip": "FruitShopSystem\\util\\ManagementUtils.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T12:39:08.048Z",
+              "WhenOpened": "2025-01-19T13:18:23.675Z",
               "EditorCaption": ""
             },
             {
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "FruitShopSystem\\util\\Inputter.cs",
               "ToolTip": "C:\\0LamViec\\ELCA_6months\\Test\\EvereduTest-1\\FruitShopSystem\\FruitShopSystem\\util\\Inputter.cs",
               "RelativeToolTip": "FruitShopSystem\\util\\Inputter.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAYwFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T08:27:17.285Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "FruitShopSystem\\runtime\\Program.cs",
               "ToolTip": "C:\\0LamViec\\ELCA_6months\\Test\\EvereduTest-1\\FruitShopSystem\\FruitShopSystem\\runtime\\Program.cs",
               "RelativeToolTip": "FruitShopSystem\\runtime\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBIAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwBQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T03:56:48.082Z",
               "EditorCaption": ""
@@ -105,8 +105,7 @@
               "RelativeToolTip": "FruitShopSystem\\data\\Customer.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAowA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T03:24:54.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T03:24:54.417Z"
             },
             {
               "$type": "Document",
@@ -116,7 +115,7 @@
               "RelativeDocumentMoniker": "FruitShopSystem\\data\\FruitShopManagement.cs",
               "ToolTip": "C:\\0LamViec\\ELCA_6months\\Test\\EvereduTest-1\\FruitShopSystem\\FruitShopSystem\\data\\FruitShopManagement.cs",
               "RelativeToolTip": "FruitShopSystem\\data\\FruitShopManagement.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAQwFIAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAkwJoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T03:06:50.837Z",
               "EditorCaption": ""
